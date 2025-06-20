@@ -51,6 +51,50 @@ header {
     animation: fadeInDown 0.8s ease-out;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon:hover img,
+.social-icon:focus img {
+    transform: scale(1.15) rotate(5deg);
+}
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -92,5 +136,37 @@ header {
     .logo {
         height: 35px;
         margin-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 0.8rem;
+    }
+    
+    .social-icon {
+        width: 34px;
+        height: 34px;
+    }
+    
+    .social-icon img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons {
+        gap: 0.6rem;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .social-icon img {
+        width: 16px;
+        height: 16px;
     }
 }
