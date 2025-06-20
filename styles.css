@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,14 +8,12 @@ body {
     flex-direction: column;
 }
 
-/* Основной контейнер с отступами */
 body > * {
     padding-left: 16.66%; 
     padding-right: 16.66%;
     box-sizing: border-box;
 }
 
-/* Стили для шапки */
 header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -29,7 +26,7 @@ header {
     z-index: 100;
 }
 
-h1 {
+.header {
     display: flex;
     align-items: center;
     margin: 0;
@@ -40,17 +37,17 @@ h1 {
 }
 
 .logo {
-    height: 100px;
-    margin-right: 15px;
+    height: 50px;
+    transform: scale(2);
+    margin-right: 30px;
     transition: transform 0.3s ease;
 }
 
-.logo:hover {
-    transform: rotate(-5deg) scale(1.05);
+.header:hover .logo {
+    transform: rotate(-5deg) scale(2.05);
 }
 
-/* Анимация для заголовка */
-h1 {
+.header {
     animation: fadeInDown 0.8s ease-out;
 }
 
@@ -65,7 +62,6 @@ h1 {
     }
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 1200px) {
     body > * {
         padding-left: 10%;
@@ -79,7 +75,7 @@ h1 {
         padding-right: 5%;
     }
     
-    h1 {
+    .header {
         font-size: 1.8rem;
     }
     
@@ -89,7 +85,7 @@ h1 {
 }
 
 @media (max-width: 480px) {
-    h1 {
+    .header {
         font-size: 1.5rem;
     }
     
