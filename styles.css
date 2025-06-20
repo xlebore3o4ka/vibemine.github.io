@@ -83,15 +83,13 @@ header {
     transition: transform 0.3s ease;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon:hover {
     background: rgba(255, 255, 255, 0.95);
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.social-icon:hover img,
-.social-icon:focus img {
+.social-icon:hover img {
     transform: scale(1.15) rotate(5deg);
 }
 
