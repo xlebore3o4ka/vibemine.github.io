@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
-    color: #333;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    color: #e0e0e0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,31 +17,33 @@ body > * {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(30, 30, 30, 0.95);
     backdrop-filter: blur(10px);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
+    flex-shrink: 0;
 }
 
 .header {
     display: flex;
     align-items: center;
+    font-family: "Ysabeau SC", sans-serif;
     margin: 0;
     font-weight: 700;
-    font-size: 2.2rem;
-    color: #2c3e50;
+    font-size: 2.7rem;
+    color: #f0f0f0;
     letter-spacing: -0.5px;
 }
 
 .logo {
     height: 50px;
-    transform: scale(2);
-    margin-right: 30px;
+    transform: scale(2.1);
+    margin-right: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -58,113 +62,50 @@ header {
     width: 100%;
 }
 
-.social-icons {
+.greating {
+    background: url('data/resources/bg1.png') center/cover no-repeat;
+    flex-grow: 1;
     display: flex;
-    gap: 1.2rem;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(4px);
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 2rem 0;
+    font-family: "Ysabeau SC", sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #f0f0f0;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    letter-spacing: -1.5px;
+    position: relative;
 }
 
-.social-icon img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.social-icon:hover {
-    background: rgba(255, 255, 255, 0.95);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.social-icon:hover img {
-    transform: scale(1.15) rotate(5deg);
+.greating-text {
+    margin-right: 700px;
+    margin-bottom: 500px;
 }
 
 @keyframes fadeInDown {
-    0% {
+    from {
         opacity: 0;
         transform: translateY(-20px);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@media (max-width: 1200px) {
-    body > * {
-        padding-left: 10%;
-        padding-right: 10%;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-}
-
-@media (max-width: 768px) {
-    body > * {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    
-    .header {
-        font-size: 1.8rem;
-    }
-    
-    .logo {
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        font-size: 1.5rem;
-    }
-    
-    .logo {
-        height: 35px;
-        margin-right: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .social-icons {
-        gap: 0.8rem;
-    }
-    
-    .social-icon {
-        width: 34px;
-        height: 34px;
-    }
-    
-    .social-icon img {
-        width: 18px;
-        height: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .social-icons {
-        gap: 0.6rem;
-    }
-    
-    .social-icon {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .social-icon img {
-        width: 16px;
-        height: 16px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
