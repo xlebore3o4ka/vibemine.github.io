@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Press+Start+2P&display=swap');
 
 body {
     margin: 0;
@@ -60,32 +61,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-.greating {
-    background: url('data/resources/bg1.png') center/cover no-repeat;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0;
-    font-family: "Ysabeau SC", sans-serif;
-    font-weight: 600;
-    font-size: 3.5rem;
-    color: #f0f0f0;
-    text-align: center;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    animation: fadeInUp 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
-    opacity: 0;
-    transform: translateY(20px);
-    letter-spacing: -1.5px;
-    position: relative;
-}
-
-.greating-text {
-    margin-right: 700px;
-    margin-bottom: 500px;
 }
 
 @keyframes fadeInDown {
