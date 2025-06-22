@@ -2,20 +2,161 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibemine - че.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Vibemine - хлеб?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;700&display=swap">
 </head>
 <body>
-    <script src="script.js"></script>
     <header>
-        <div class="header-container">
-            <a class="header" href="https://www.vibemine.fun/" style="cursor: pointer; text-decoration: none; color: inherit; display: inline-block;">
+        <div class="header-container header-animation">
+            <a class="header" href="https://www.vibemine.fun/">
                 <span style="display: flex; align-items: center;">
-                    <img src="data/resources/logo.png" class="logo">
+                    <img src="data/resources/logo.png" class="logo" alt="Vibemine Logo">
                     Vibemine
                 </span>
             </a>
+            <div class="nav-links">
+                <a href="#about">О сервере</a>
+                <a href="#features">Особенности</a>
+                <a href="#join">Присоединиться</a>
+            </div>
         </div>
     </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animated">
+                <h1>Vibemine - мир бескрайних возможностей</h1>
+                <p>Присоединяйся к уникальному Minecraft сообществу, где каждый найдет что-то по душе!</p>
+                <a href="#join" class="cta-button">Играть сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="animated">Наш сервер</h2>
+            <div class="about-content">
+                <div class="about-text animated delay-1">
+                    <p>Это место, где каждый может погрузиться в захватывающее приключение, насладиться ванильным майнкрафтом и стать частью живой истории.</p>
+                    <p>Это не просто бесцельное выживание! Мы добавили увлекательный сюжет, который раскрывается постепенно, делая игру глубже и интереснее. Тайны, загадки и общие цели объединяют игроков, создавая по-настоящему дружное комьюнити.<p>
+                    <p></p>
+                </div>
+                <div class="about-image animated delay-2">
+                    <img src="data/resources/world.png" alt="Vibemine Minecraft World">
+                    <div class="rotating-squares">
+                        <div class="square sq1"></div>
+                        <div class="square sq2"></div>
+                        <div class="square sq3"></div>
+                        <div class="square sq4"></div>
+                        <div class="square sq5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="features">
+        <div class="features-container">
+            <h2 class="animated">Наши особенности</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card animated delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Собственный лор</h3>
+                    <p>Уникальная история, написанная специально для сервера.</p>
+                </div>
+                
+                <div class="feature-card animated delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Активное сообщество</h3>
+                    <p>Присоединяйтесь к нашему дружелюбному сообществу, которое всегда готово помочь новичкам.</p>
+                </div>
+                
+                <div class="feature-card animated delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Интерактивность</h3>
+                    <p>Постройки игроков могут преобрести собственные механики, а так же влиять на сюжет.</p>
+                </div>
+                
+                <div class="feature-card animated delay-1">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Ну что еще</h3>
+                    <p>Когда то я был на море и просрал тапок, интересно где он сейчас?</p>
+                </div>
+                
+                <div class="feature-card animated delay-2">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Стабильный аптайм</h3>
+                    <p>Сервер работает 24/7 с минимальным временем простоя благодаря мощному оборудованию.</p>
+                </div>
+                
+                <div class="feature-card animated delay-3">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>Модерация</h3>
+                    <p>Наша администрация следит за поведением игроков, поддерживая дружный вайб на сервере.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join">
+        <div class="container">
+            <h2 class="animated">Vibemine</h2>
+            <p class="animated delay-1">Самый дружный сервер с прекрасным сообществом.<br>Mы ждем именно тебя</p>
+            
+            <a href="https://t.me/your_bot_link" class="cta-button animated" target="_blank">
+                <i class="fab fa-telegram"></i> Войти через бота
+            </a>
+        </div>
+    </section>
+<!-- https://ibb.co/Tx9Rmh0R -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a class="header" href="https://www.vibemine.fun/">
+                    <span style="display: flex; align-items: center;">
+                        <img src="data/resources/logo.png" class="logo" alt="Vibemine Logo">
+                        Vibemine
+                    </span>
+                </a>
+                
+                <div class="social-links">
+                    <a target="_blank" href="https://pay.cloudtips.ru/p/1b6b054d" class="social-icon" style="text-decoration: none;"><i class="fab fa-dollar"></i></a>
+                    <a target="_blank" href="https://www.tiktok.com/@vibemine.fun" class="social-icon" style="text-decoration: none;"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" href="https://t.me/vibemine_fun" class="social-icon" style="text-decoration: none;"><i class="fab fa-telegram"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCyKmRydZBMO7y8HzMkC8cvA" class="social-icon" style="text-decoration: none;"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <p class="copyright">
+                    © 2025 Vibemine Minecraft Server. Все права защищены.
+                    <br>
+                    Vibemine не связан с Mojang Studios, Microsoft Corporation или игрой Minecraft. Все товарные знаки Minecraft принадлежат их законным владельцам.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
