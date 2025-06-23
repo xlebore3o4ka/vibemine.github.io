@@ -34,3 +34,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const hero = document.querySelector('.hero-content');
     if (hero) hero.classList.add('.animated.in-view');
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const splashHeader = document.querySelector('footer h3');
+    
+    fetch('data/splashes.txt')
+        .then(response => {
+            if (!response.ok) throw new Error('Файл не найден');
+            return response.text();
+        })
+        .then(data => {
+            const splashes = data.split('\n')
+                                .filter(line => line.trim() !== '');
+            
+            if (splashes.length > 0) {
+                const randomIndex = Math.floor(Math.random() * splashes.length);
+                splashHeader.textContent = splashes[randomIndex];
+            }
+        })
+        .catch(error => {
+            console.error('Ошибка загрузки сплешей:', error);
+            splashHeader.textContent = 'Добро пожаловать на Vibemine!';
+        });
+});

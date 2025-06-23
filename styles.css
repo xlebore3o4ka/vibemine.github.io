@@ -1,12 +1,5 @@
-@font-face {
-  font-family: 'Ysabeau SC';
-  font-style: normal;
-  font-weight: 1 1000;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ysabeausc/v7/kmKnZq7tH7h2Y3gS7Ur0l1E.woff2) format('woff2');
-}
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=fallback');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
 
 * {
     margin: 0;
@@ -582,6 +575,23 @@ footer {
     display: flex;
     gap: 1.5rem;
     margin: 1.5rem 0;
+}
+
+.footer-content h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation: splash-animation 0.5s infinite linear;
+    color: #f93e7d;
+}
+
+@keyframes splash-animation {
+    0%, 100% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.02);
+    }
 }
 
 .social-icon {
