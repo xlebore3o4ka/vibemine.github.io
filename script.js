@@ -53,6 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Ошибка загрузки сплешей:', error);
-            splashHeader.textContent = 'Добро пожаловать на Vibemine!';
+            splashHeader.textContent = 'самый уникальный сплеш';
         });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    burgerMenu.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}); 
